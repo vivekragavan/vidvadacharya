@@ -1,13 +1,17 @@
 #!/bin/sh
 # Build the GitHub Pages preview and publish it to the gh-pages branch.
-# Live at https://<owner>.github.io/vaidyacharya/, where <owner> owns origin.
+# Live at https://<owner>.github.io/<repo>/, where <owner>/<repo> is origin.
 # Usage: sh scripts/deploy-pages.sh
 set -eu
 
 cd "$(dirname "$0")/.."
 remote=$(git remote get-url origin)
 owner=$(echo "$remote" | sed -E 's#^.*github\.com[:/]([^/]+)/.*$#\1#')
-SITE_URL=https://$owner.github.io BASE_PATH=/vaidyacharya npx astro build
+repo=$(basename "$remote" .git)
+SITE_URL=https://$owner.github.io BASE_PATH=/$repo npx astro build
+
+# Keep the preview out of search engines (pages also carry noindex)
+printf 'User-agent: *\nDisallow: /\n' > dist/robots.txt
 
 # _astro/ starts with an underscore, so Jekyll must be switched off
 touch dist/.nojekyll

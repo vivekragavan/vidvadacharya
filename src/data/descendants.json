@@ -80,7 +80,64 @@
                 "id": "loren",
                 "name": "Loren Berrier",
                 "role": "Great-grandson",
-                "publications": []
+                "publications": [
+                  {
+                    "title": "Leaving",
+                    "venue": "Radioactive Sandwich · from the album PLANET · SoundCloud",
+                    "year": "2022",
+                    "url": "https://soundcloud.com/lorenberrier/radioactive-sandwich-leaving-1"
+                  },
+                  {
+                    "title": "Planet",
+                    "venue": "Radioactive Sandwich · from the album PLANET · SoundCloud",
+                    "year": "2022",
+                    "url": "https://soundcloud.com/lorenberrier/radioactive-sandwich-planet"
+                  },
+                  {
+                    "title": "What Is Unsolved",
+                    "venue": "Radioactive Sandwich · from the album PLANET · SoundCloud",
+                    "year": "2022",
+                    "url": "https://soundcloud.com/lorenberrier/radioactive-sandwich-what-is"
+                  },
+                  {
+                    "title": "Singing With The Trees",
+                    "venue": "Radioactive Sandwich · from the album PLANET · SoundCloud",
+                    "year": "2022",
+                    "url": "https://soundcloud.com/lorenberrier/radioactive-sandwich-singing"
+                  },
+                  {
+                    "title": "His Theme",
+                    "venue": "Radioactive Sandwich · from the album PLANET · SoundCloud",
+                    "year": "2022",
+                    "url": "https://soundcloud.com/lorenberrier/radioactive-sandwich-his-theme"
+                  },
+                  {
+                    "title": "A New Friend",
+                    "venue": "Radioactive Sandwich · from the album PLANET · SoundCloud",
+                    "year": "2022",
+                    "url": "https://soundcloud.com/lorenberrier/radioactive-sandwich-a-new"
+                  },
+                  {
+                    "title": "Found You Found Me",
+                    "venue": "Radioactive Sandwich · from the album PLANET · SoundCloud",
+                    "year": "2022",
+                    "url": "https://soundcloud.com/lorenberrier/found-you-found-me"
+                  },
+                  {
+                    "title": "Recovery",
+                    "venue": "Radioactive Sandwich · from the album PLANET · SoundCloud",
+                    "year": "2022",
+                    "url": "https://soundcloud.com/lorenberrier/radioactive-sandwich-recovery"
+                  }
+                ],
+                "note": "Composer and producer who records electronic music as Radioactive Sandwich.",
+                "noteSource": {
+                  "label": "Listen to the album PLANET (2022)",
+                  "url": "https://soundcloud.com/lorenberrier/sets/planet"
+                },
+                "boxLabel": "Loren’s Music",
+                "pubNoun": "Song",
+                "source": "Radioactive Sandwich · album PLANET"
               },
               {
                 "id": "justin",

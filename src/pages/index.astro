@@ -266,6 +266,22 @@ const byYear = (pubs: any[]) => {
       const c = child.getBoundingClientRect();
       anc.style.left = `${c.left + c.width / 2 - box.left - anc.offsetWidth / 2}px`;
     });
+    // Keep ancestor boxes from touching: push overlapping neighbours apart evenly.
+    const gap = 48;
+    const placed = boxes
+      .filter((b) => b.style.left)
+      .map((b) => ({ el: b, left: parseFloat(b.style.left), w: b.offsetWidth }))
+      .sort((a, b) => a.left - b.left);
+    for (let i = 1; i < placed.length; i++) {
+      const a = placed[i - 1];
+      const b = placed[i];
+      const overlap = a.left + a.w + gap - b.left;
+      if (overlap > 0) {
+        a.left -= overlap / 2;
+        b.left += overlap / 2;
+      }
+    }
+    placed.forEach((p) => (p.el.style.left = `${p.left}px`));
   };
   const layout = () => {
     evenHeights();

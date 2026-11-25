@@ -78,10 +78,10 @@ const byYear = (pubs: any[]) => {
       {p.role && <span class="eyebrow">{p.role}</span>}
       <h2 id={`person-${p.id}-name`}>{p.name}</h2>
       {p.note && <p class="note">{p.note}{p.noteSource && <> <a href={p.noteSource.url} target="_blank" rel="noopener">{p.noteSource.label}</a></>}</p>}
-      {!(p.patents?.length > 0 && p.publications.length === 0) && <h3>Publications</h3>}
+      {!(p.patents?.length > 0 && p.publications.length === 0) && <h3>{p.boxLabel ?? 'Publications'}</h3>}
       {p.patents?.length > 0 && p.publications.length === 0 ? null : p.publications.length > 0 ? (
         <>
-          <p class="pub-count">{p.publications.length} publication{p.publications.length === 1 ? '' : 's'}{p.source && ` · ${p.source}`}</p>
+          <p class="pub-count">{p.publications.length} {p.pubNoun ?? 'publication'}{p.publications.length === 1 ? '' : 's'}{p.source && ` · ${p.source}`}</p>
           {byYear(p.publications).map(([year, pubs]) => (
             <section class="pub-year">
               <h4>{year}</h4>

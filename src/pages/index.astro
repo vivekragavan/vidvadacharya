@@ -283,11 +283,34 @@ const byYear = (pubs: any[]) => {
     }
     placed.forEach((p) => (p.el.style.left = `${p.left}px`));
   };
+  // The line down to a couple's children starts midway between husband and wife, not under just
+  // one of them (a couple padded by centreOnDescendant is off-centre in its branch).
+  const centreChildLine = () => {
+    document.querySelectorAll<HTMLElement>('.couple-wrap').forEach((wrap) => {
+      const kids = wrap.parentElement?.querySelector<HTMLElement>(':scope > ul');
+      const couple = wrap.querySelector<HTMLElement>(':scope > .couple');
+      if (!kids || !couple) return;
+      // Set on every list (custom properties inherit, so a parent's shift would leak down).
+      kids.style.setProperty('--stub-shift', '0px');
+      const c = couple.getBoundingClientRect();
+      const u = kids.getBoundingClientRect();
+      const shift = c.left + c.width / 2 - (u.left + u.width / 2);
+      const items = [...kids.querySelectorAll<HTMLElement>(':scope > li')];
+      if (Math.abs(shift) < 1 || items.length < 2) return;
+      // Keep the start of the line over the bar joining the children.
+      const first = items[0].getBoundingClientRect();
+      const last = items[items.length - 1].getBoundingClientRect();
+      const min = first.left + first.width / 2 - (u.left + u.width / 2);
+      const max = last.left + last.width / 2 - (u.left + u.width / 2);
+      kids.style.setProperty('--stub-shift', `${Math.min(max, Math.max(min, shift))}px`);
+    });
+  };
   const layout = () => {
     evenHeights();
     centreOnDescendant();
     makeRoomForInlaws();
     placeAncestors();
+    centreChildLine();
     drawInlawLines();
   };
   layout();
@@ -417,7 +440,7 @@ const byYear = (pubs: any[]) => {
     content: '';
     position: absolute;
     top: 0;
-    left: 50%;
+    left: calc(50% + var(--stub-shift, 0px));
     height: 28px;
     border-left: 2px solid var(--join);
   }

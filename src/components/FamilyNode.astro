@@ -21,7 +21,7 @@ if (hasInlaws && person.spouse.parentsSide === 'left') pair.reverse();
     <div class="couple placeholder">
       <span class="who">
         <span class="name">{person.name}</span>
-        <span class="role">{person.role}</span>
+        {person.role && <span class="role">{person.role}</span>}
       </span>
     </div>
   ) : (

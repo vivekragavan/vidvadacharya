@@ -4,7 +4,6 @@
     "id": "duraiswami",
     "name": "Pandit Duraiswami Aiyangar",
     "boxName": "Pt. Duraiswami Aiyangar",
-    "role": "Son · 1888 – 1956",
     "biography": true,
     "bibliography": true,
     "note": "Physician, scholar, translator and founder of the journal Vaidya Kalanidhi.",
@@ -14,7 +13,6 @@
     "spouse": {
       "id": "kanakavalli",
       "name": "Kanakavalli",
-      "role": "Wife",
       "note": "Of the Echambadi family, Tiruvallur.",
       "publications": []
     },
@@ -22,7 +20,6 @@
       {
         "id": "vijayaraghavan",
         "name": "M.D. Vijayaraghavan",
-        "role": "Grandson · b. 1922",
         "source": "Published as M.D. Vijayaraghavan in India",
         "publications": [
           {
@@ -65,7 +62,6 @@
           {
             "id": "vanaja",
             "name": "Dr. Vanaja Ragavan",
-            "role": "Great-granddaughter",
             "publications": [
               {
                 "title": "Drug Development for Women",
@@ -79,7 +75,6 @@
               {
                 "id": "loren",
                 "name": "Loren Berrier",
-                "role": "Great-great-grandson",
                 "publications": [
                   {
                     "title": "Leaving",
@@ -142,7 +137,6 @@
               {
                 "id": "justin",
                 "name": "Justin Berrier",
-                "role": "Great-great-grandson",
                 "publications": []
               }
             ]
@@ -150,7 +144,7 @@
           {
             "id": "vivek",
             "name": "Vivek Ragavan",
-            "role": "Great-grandson · Trustee",
+            "role": "Trustee",
             "note": "Co-founder of the Vaidyacharya Trust.",
             "link": "/about/",
             "linkLabel": "About Vivek",
@@ -170,7 +164,6 @@
             "spouse": {
               "id": "nilima",
               "name": "Dr. Nilima Ragavan",
-              "role": "Wife · Daughter",
               "publications": [
                 {
                   "title": "Implementing aEEG in a Level II NICU: Enhancing Neurologic Outcomes in a Community-Based Setting",
@@ -218,7 +211,6 @@
                 {
                   "id": "ramnarayan",
                   "name": "Ramnarayan Manudhane",
-                  "role": "Father",
                   "publications": [],
                   "patents": [
                     {
@@ -234,7 +226,6 @@
                 {
                   "id": "indira",
                   "name": "Indira Manudhane",
-                  "role": "Mother",
                   "publications": []
                 }
               ]
@@ -243,7 +234,6 @@
               {
                 "id": "maya",
                 "name": "Dr. Maya Ragavan",
-                "role": "Great-great-granddaughter",
                 "publications": [
                   {
                     "title": "Hospital-Based Secure Firearm Storage Programs: How Can We Go Further?",
@@ -1046,7 +1036,6 @@
               {
                 "id": "meera",
                 "name": "Dr. Meera Ragavan",
-                "role": "Great-great-granddaughter",
                 "publications": [
                   {
                     "title": "Sociodemographic Disparities in Oncology Clinical Trial Enrollment in an Integrated Health System",
@@ -1399,7 +1388,6 @@
               {
                 "id": "neil",
                 "name": "Neil Ragavan",
-                "role": "Great-great-grandson",
                 "publications": []
               }
             ],
@@ -1471,13 +1459,11 @@
         "spouse": {
           "id": "vimala",
           "name": "Vimala Ragavan",
-          "role": "Wife · Granddaughter",
           "publications": [],
           "parents": [
             {
               "id": "alagasingam",
               "name": "Dr. Alagasingam Vasudevan",
-              "role": "Husband",
               "source": "Published as A. Vasudevan",
               "publications": [
                 {
@@ -1549,7 +1535,6 @@
             {
               "id": "singari",
               "name": "Singari Ammal",
-              "role": "Daughter",
               "publications": [],
               "parents": [
                 {
@@ -1642,14 +1627,13 @@
       {
         "id": "vaijayanti",
         "name": "Vaijayanti",
-        "role": "Granddaughter",
         "note": "She later recounted how her father learned languages by deciphering posters on walls.",
         "publications": [],
         "children": [
           {
             "id": "malavika",
             "name": "Malavika Muralidharan",
-            "role": "Great-granddaughter · Trustee",
+            "role": "Trustee",
             "note": "Named after the heroine of Kalidasa’s Malavika Agnimitram, which her grandfather was translating when she was born.",
             "link": "/about/",
             "linkLabel": "About Malavika",
@@ -1658,7 +1642,6 @@
           {
             "id": "chandrika",
             "name": "Chandrika",
-            "role": "Great-granddaughter",
             "note": "Edited the Trust’s writing about her grandfather.",
             "publications": [
               {
@@ -1699,7 +1682,6 @@
               {
                 "id": "dharini",
                 "name": "Dharini Bhaskar",
-                "role": "Great-great-granddaughter",
                 "note": "Novelist and publisher. Associate Publisher, Literary, at HarperCollins India. She has also written for Hindu BusinessLine, Mint Lounge, Firstpost, Arré and Vogue.",
                 "publications": [
                   {
@@ -1836,8 +1818,7 @@
       },
       {
         "placeholder": true,
-        "name": "Four more children",
-        "role": "Grandchildren · Names to be added"
+        "name": "Four more children"
       }
     ],
     "parents": [
@@ -1849,7 +1830,6 @@
       {
         "id": "ranganayaki",
         "name": "Ranganayaki",
-        "role": "Wife",
         "publications": []
       }
     ]

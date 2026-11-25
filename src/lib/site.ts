@@ -2,7 +2,7 @@ import content from '../data/content.json';
 
 export const site = {
   name: 'Vidvadacharya Trust',
-  brand: 'Dr. P.T. SRINIVASA IYENGAR',
+  brand: ['Dr. P.T. SRINIVASA IYENGAR', 'AND M. VIJAYARAGHAVACHAR FAMILY'],
   url: 'https://www.vaidyacharya.org',
   email: content.contact.email,
 };
